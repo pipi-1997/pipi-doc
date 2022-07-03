@@ -14,4 +14,7 @@ module.exports = {
   testPathIgnorePatterns: ['<rootDir>/packages/(?:.+?)/lib/'],
   preset: 'ts-jest',
   transformIgnorePatterns: ['/node_modules/(?!webpack).+\\.js$'],
+  moduleNameMapper: {
+    '@/(.*)$': '<rootDir>/packages/$1',
+  },
 };

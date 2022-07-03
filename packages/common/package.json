@@ -1,16 +1,11 @@
 {
-  "name": "@pipi-doc/doc-loader",
+  "name": "@pipi-doc/common",
   "version": "0.0.1",
-  "type": "module",
   "description": "> TODO: description",
-  "keywords": [
-    "webpack",
-    "loader"
-  ],
   "author": "pipi <zhuangpipi01@gmail.com>",
   "homepage": "https://github.com/pipi-1997/pipi-doc#readme",
   "license": "MIT",
-  "main": "lib/doc-loader.js",
+  "main": "lib/index.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -19,24 +14,23 @@
     "lib"
   ],
   "publishConfig": {
-    "access": "public"
+    "registry": "https://registry.npmmirror.com/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pipi-1997/pipi-doc.git"
   },
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/pipi-1997/pipi-doc/issues"
   },
   "dependencies": {
-    "loader-utils": "^3.2.0",
-    "schema-utils": "^4.0.0"
+    "marked": "^4.0.17",
+    "spark-md5": "^3.0.2"
   },
   "devDependencies": {
-    "@types/loader-utils": "^2.0.3",
-    "@types/schema-utils": "^2.4.0"
+    "@types/marked": "^4.0.3"
   }
 }

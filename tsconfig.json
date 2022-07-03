@@ -11,7 +11,10 @@
     "suppressImplicitAnyIndexErrors": true,
     "declaration": true,
     "resolveJsonModule": true,
-    "baseUrl": "./packages"
+    "baseUrl": "./packages",
+    "paths": {
+      "@/*": ["./*"]
+    },
   },
   "exclude": [
     "node_modules",
